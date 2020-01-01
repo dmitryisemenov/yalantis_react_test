@@ -1,0 +1,56 @@
+.main {
+    &_calendar {
+        display: flex;
+        flex-direction: row;
+        margin: 12px;
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;
+    
+        div {
+            display: flex;
+            flex-direction: column;
+            width: calc(100%/12);
+            border-right: 1px solid #000;
+    
+            span {
+                padding: 4px 0;
+            }
+    
+            span:last-child {
+                color: #fff;
+                cursor: pointer;
+            }
+    
+            span:first-child {
+                border-bottom: 1px solid #000;
+            }
+    
+            &:first-child {
+                border-left: 1px solid #000;
+            }
+        }
+    }
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+
+        &--item {
+            display: flex;
+            flex-direction: row;
+            span {
+                display: block;
+                width: 50%;
+                padding: 12px;
+            }
+
+            span:last-child {
+                text-align: left;
+            }
+
+            span:first-child {
+                text-align: right;
+            }
+        }
+    }
+}
